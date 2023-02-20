@@ -4,15 +4,39 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
     flex-wrap: wrap;
     background-color: rgb(208, 229, 255);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.charTitle {
+    font-size: 2em;
+    color: white;
+    text-shadow: 1px 1px 2px #2081db, 0 0 4px rgb(221, 126, 255);
+    margin: 3em 1em 1em 1em;
+}
+
+.charText {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black;
+}
+
+.charRarity {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: black;
+    padding: .2em;
 }
 
 .charElements {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     background-color: rgb(208, 229, 255);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -21,8 +45,8 @@
 .charPrimogems {
     position: absolute;
     right: 0;
-    margin: 1em;
-    padding: 2em;
+    margin: 2%;
+    padding: 2%;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     border: 1px solid #4290f0;
@@ -30,32 +54,86 @@
     color: #4290f0;
 }
 
+.elementTitle {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 1px 1px 2px #2081db, 0 0 4px rgb(221, 126, 255);
+    margin-top: 3em;
+}
+
 .charPyro {
-    background-color: red;
+    display: flex;
+    padding: 3em;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    background-color: rgb(255, 196, 184);
+    border-radius: 20px;
+    box-shadow: 10px 10px white;
 }
 
 .charHydro {
-    background-color: blue;
-
+    display: flex;
+    padding: 3em;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    background-color: rgb(163, 195, 255);
+    border-radius: 20px;
+    box-shadow: 10px 10px white;
 }
 
 .charAnemo {
-    background-color: aquamarine;
-
+    display: flex;
+    padding: 3em;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    background-color: rgb(186, 255, 238);
+    border-radius: 20px;
+    box-shadow: 10px 10px white;
 }
 
 .charElectro {
-    background-color: purple;
+    display: flex;
+    padding: 3em;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    background-color: rgb(188, 176, 255);
+    border-radius: 20px;
+    box-shadow: 10px 10px white;
 }
 
 .charCryo {
-    background-color: lightblue;
+    display: flex;
+    padding: 3em;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    background-color: rgb(144, 220, 253);
+    border-radius: 20px;
+    box-shadow: 10px 10px white;
 }
 
 .charGeo {
-    background-color: yellow;
+    display: flex;
+    padding: 3em;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    background-color: rgb(255, 255, 205);
+    border-radius: 20px;
+    box-shadow: 10px 10px white;
 }
 
 .charDendro {
-    background-color: green;
+    display: flex;
+    padding: 3em;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    background-color: rgb(209, 255, 166);
+    border-radius: 20px;
+    box-shadow: 10px 10px white;
 }

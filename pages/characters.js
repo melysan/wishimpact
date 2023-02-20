@@ -29,15 +29,17 @@ export default function Characters() {
             <div>
                 <div className={styles.charPrimogems}><b>Primogems:</b> {number}</div>
                 <div className={styles.charMain}>
+                    <h1 className={styles.charTitle}>✨ Wish Impact Characters✨</h1>
+
+                    <h2 className={styles.elementTitle}>Pyro</h2>
                     <div className={styles.charElements}>
                         {
                             record.map((rec, index) => {
                                 return (
                                     <>
                                         <>{rec.vision == "Pyro" ? <div className={styles.charPyro} key={index}>
-                                            <div>{rec.character_name}</div>
-                                            <div>Rarity: {rec.rarity}*</div>
-                                            <div>{rec.vision}</div>
+                                            <div className={styles.charText}>{rec.character_name}</div>
+                                            <div className={styles.charRarity}>{rec.rarity}*</div>
                                             <Image src={rec.image_url} width={100} height={100} />
                                         </div> : <></>}</>
                                     </>
@@ -45,15 +47,15 @@ export default function Characters() {
                             })
                         }
                     </div>
+                    <h2 className={styles.elementTitle}>Hydro</h2>
                     <div className={styles.charElements}>
                         {
                             record.map((rec, index) => {
                                 return (
                                     <>
                                         <>{rec.vision == "Hydro" ? <div className={styles.charHydro} key={index}>
-                                            <div>{rec.character_name}</div>
-                                            <div>{rec.rarity}</div>
-                                            <div>{rec.vision}</div>
+                                            <div className={styles.charText}>{rec.character_name}</div>
+                                            <div className={styles.charRarity}>{rec.rarity}*</div>
                                             <Image src={rec.image_url} width={100} height={100} />
                                         </div> : <></>}</>
                                     </>
@@ -62,15 +64,15 @@ export default function Characters() {
                         }
                     </div>
 
+                    <h2 className={styles.elementTitle}>Anemo</h2>
                     <div className={styles.charElements}>
                         {
                             record.map((rec, index) => {
                                 return (
                                     <>
                                         <>{rec.vision == "Anemo" ? <div className={styles.charAnemo} key={index}>
-                                            <div>{rec.character_name}</div>
-                                            <div>{rec.rarity}</div>
-                                            <div>{rec.vision}</div>
+                                            <div className={styles.charText}>{rec.character_name}</div>
+                                            <div className={styles.charRarity}>{rec.rarity}*</div>
                                             <Image src={rec.image_url} width={100} height={100} />
                                         </div> : <></>}</>
                                     </>
@@ -79,15 +81,15 @@ export default function Characters() {
                         }
                     </div>
 
+                    <h2 className={styles.elementTitle}>Electro</h2>
                     <div className={styles.charElements}>
                         {
                             record.map((rec, index) => {
                                 return (
                                     <>
                                         <>{rec.vision == "Electro" ? <div className={styles.charElectro} key={index}>
-                                            <div>{rec.character_name}</div>
-                                            <div>{rec.rarity}</div>
-                                            <div>{rec.vision}</div>
+                                            <div className={styles.charText}>{rec.character_name}</div>
+                                            <div className={styles.charRarity}>{rec.rarity}*</div>
                                             <Image src={rec.image_url} width={100} height={100} />
                                         </div> : <></>}</>
                                     </>
@@ -96,15 +98,15 @@ export default function Characters() {
                         }
                     </div>
 
+                    <h2 className={styles.elementTitle}>Cryo</h2>
                     <div className={styles.charElements}>
                         {
                             record.map((rec, index) => {
                                 return (
                                     <>
                                         <>{rec.vision == "Cryo" ? <div className={styles.charCryo} key={index}>
-                                            <div>{rec.character_name}</div>
-                                            <div>{rec.rarity}</div>
-                                            <div>{rec.vision}</div>
+                                            <div className={styles.charText}>{rec.character_name}</div>
+                                            <div className={styles.charRarity}>{rec.rarity}*</div>
                                             <Image src={rec.image_url} width={100} height={100} />
                                         </div> : <></>}</>
                                     </>
@@ -113,15 +115,15 @@ export default function Characters() {
                         }
                     </div>
 
+                    <h2 className={styles.elementTitle}>Geo</h2>
                     <div className={styles.charElements}>
                         {
                             record.map((rec, index) => {
                                 return (
                                     <>
                                         <>{rec.vision == "Geo" ? <div className={styles.charGeo} key={index}>
-                                            <div>{rec.character_name}</div>
-                                            <div>{rec.rarity}</div>
-                                            <div>{rec.vision}</div>
+                                            <div className={styles.charText}>{rec.character_name}</div>
+                                            <div className={styles.charRarity}>{rec.rarity}*</div>
                                             <Image src={rec.image_url} width={100} height={100} />
                                         </div> : <></>}</>
                                     </>
@@ -130,15 +132,15 @@ export default function Characters() {
                         }
                     </div>
 
+                    <h2 className={styles.elementTitle}>Dendro</h2>
                     <div className={styles.charElements}>
                         {
                             record.map((rec, index) => {
                                 return (
                                     <>
                                         <>{rec.vision == "Dendro" ? <div className={styles.charDendro} key={index}>
-                                            <div>{rec.character_name}</div>
-                                            <div>{rec.rarity}</div>
-                                            <div>{rec.vision}</div>
+                                            <div className={styles.charText}>{rec.character_name}</div>
+                                            <div className={styles.charRarity}>{rec.rarity}*</div>
                                             <Image src={rec.image_url} width={100} height={100} />
                                         </div> : <></>}</>
                                     </>
