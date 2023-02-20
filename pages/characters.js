@@ -1,13 +1,21 @@
 import Head from 'next/head'
 import Image from 'next/image'
-// import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Character.module.css'
 import record from '../data/genshin_characters.json'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { NavBar } from '@/components/NavBar'
 
-// const inter = Inter({ subsets: ['latin'] })
 
 export default function Characters() {
+    const [number, setNumber] = useState(1890);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setNumber(number + 90);
+        }, 2000);
+
+        return () => clearInterval(intervalId);
+    }, [number]);
 
     return (
         <>
@@ -17,22 +25,130 @@ export default function Characters() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={styles.main}>
+            <NavBar />
+            <div>
+                <div className={styles.charPrimogems}><b>Primogems:</b> {number}</div>
+                <div className={styles.charMain}>
+                    <div className={styles.charElements}>
+                        {
+                            record.map((rec, index) => {
+                                return (
+                                    <>
+                                        <>{rec.vision == "Pyro" ? <div className={styles.charPyro} key={index}>
+                                            <div>{rec.character_name}</div>
+                                            <div>Rarity: {rec.rarity}*</div>
+                                            <div>{rec.vision}</div>
+                                            <Image src={rec.image_url} width={100} height={100} />
+                                        </div> : <></>}</>
+                                    </>
+                                )
+                            })
+                        }
+                    </div>
+                    <div className={styles.charElements}>
+                        {
+                            record.map((rec, index) => {
+                                return (
+                                    <>
+                                        <>{rec.vision == "Hydro" ? <div className={styles.charHydro} key={index}>
+                                            <div>{rec.character_name}</div>
+                                            <div>{rec.rarity}</div>
+                                            <div>{rec.vision}</div>
+                                            <Image src={rec.image_url} width={100} height={100} />
+                                        </div> : <></>}</>
+                                    </>
+                                )
+                            })
+                        }
+                    </div>
 
-                {
-                    record.map((rec, index) => {
-                        return (
-                            <>
-                                <>{rec.vision == "Anemo" ? <div key={index}>
-                                    <div>{rec.character_name}</div>
-                                    <div>{rec.rarity}</div>
-                                    <div>{rec.vision}</div> </div> : <></>}</>
-                            </>
-                        )
-                    })
-                }
+                    <div className={styles.charElements}>
+                        {
+                            record.map((rec, index) => {
+                                return (
+                                    <>
+                                        <>{rec.vision == "Anemo" ? <div className={styles.charAnemo} key={index}>
+                                            <div>{rec.character_name}</div>
+                                            <div>{rec.rarity}</div>
+                                            <div>{rec.vision}</div>
+                                            <Image src={rec.image_url} width={100} height={100} />
+                                        </div> : <></>}</>
+                                    </>
+                                )
+                            })
+                        }
+                    </div>
 
-            </main>
+                    <div className={styles.charElements}>
+                        {
+                            record.map((rec, index) => {
+                                return (
+                                    <>
+                                        <>{rec.vision == "Electro" ? <div className={styles.charElectro} key={index}>
+                                            <div>{rec.character_name}</div>
+                                            <div>{rec.rarity}</div>
+                                            <div>{rec.vision}</div>
+                                            <Image src={rec.image_url} width={100} height={100} />
+                                        </div> : <></>}</>
+                                    </>
+                                )
+                            })
+                        }
+                    </div>
+
+                    <div className={styles.charElements}>
+                        {
+                            record.map((rec, index) => {
+                                return (
+                                    <>
+                                        <>{rec.vision == "Cryo" ? <div className={styles.charCryo} key={index}>
+                                            <div>{rec.character_name}</div>
+                                            <div>{rec.rarity}</div>
+                                            <div>{rec.vision}</div>
+                                            <Image src={rec.image_url} width={100} height={100} />
+                                        </div> : <></>}</>
+                                    </>
+                                )
+                            })
+                        }
+                    </div>
+
+                    <div className={styles.charElements}>
+                        {
+                            record.map((rec, index) => {
+                                return (
+                                    <>
+                                        <>{rec.vision == "Geo" ? <div className={styles.charGeo} key={index}>
+                                            <div>{rec.character_name}</div>
+                                            <div>{rec.rarity}</div>
+                                            <div>{rec.vision}</div>
+                                            <Image src={rec.image_url} width={100} height={100} />
+                                        </div> : <></>}</>
+                                    </>
+                                )
+                            })
+                        }
+                    </div>
+
+                    <div className={styles.charElements}>
+                        {
+                            record.map((rec, index) => {
+                                return (
+                                    <>
+                                        <>{rec.vision == "Dendro" ? <div className={styles.charDendro} key={index}>
+                                            <div>{rec.character_name}</div>
+                                            <div>{rec.rarity}</div>
+                                            <div>{rec.vision}</div>
+                                            <Image src={rec.image_url} width={100} height={100} />
+                                        </div> : <></>}</>
+                                    </>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+
+            </div>
         </>
     )
 }

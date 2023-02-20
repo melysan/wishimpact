@@ -1,0 +1,61 @@
+.charMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background-color: rgb(208, 229, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.charElements {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(208, 229, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.charPrimogems {
+    position: absolute;
+    right: 0;
+    margin: 1em;
+    padding: 2em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 1px solid #4290f0;
+    font-family: sans-serif;
+    color: #4290f0;
+}
+
+.charPyro {
+    background-color: red;
+}
+
+.charHydro {
+    background-color: blue;
+
+}
+
+.charAnemo {
+    background-color: aquamarine;
+
+}
+
+.charElectro {
+    background-color: purple;
+}
+
+.charCryo {
+    background-color: lightblue;
+}
+
+.charGeo {
+    background-color: yellow;
+}
+
+.charDendro {
+    background-color: green;
+}
