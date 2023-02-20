@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import record from '../data/genshin_characters.json'
 import { useState, useEffect } from 'react'
+import { SplashScreen } from '@/components/SplashScreen'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -28,9 +29,7 @@ export default function Home() {
   }, []);
 
   if (loading) {
-    return (<div>
-      // put loading comp here!
-    </div>);
+    return (<SplashScreen />);
   }
 
   return (

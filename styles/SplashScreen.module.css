@@ -1,0 +1,41 @@
+.splashMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background-color: rgb(89, 152, 236);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.splashTitle {
+    font-size: 7em;
+    font-style: oblique;
+}
+
+.splashDescription {
+    font-size: 2em;
+    font-weight: 900;
+
+}
+
+.splashFade {
+    opacity: 1;
+    animation-name: fadeOutScreen;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+
+@keyframes fadeOutScreen {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
