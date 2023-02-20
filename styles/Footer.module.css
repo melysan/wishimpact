@@ -1,0 +1,18 @@
+.footerCont {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4290f0;
+    display: flex;
+    justify-content: center;
+}
+
+.footerText {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+    text-decoration: none;
+    font-family: sans-serif;
+}

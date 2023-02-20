@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(227, 52%, 64%);
+  background-color: rgb(255, 255, 255);
   border-radius: 50px;
 }
 
@@ -22,15 +22,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #4290f0;
   font-size: 1.5em;
   padding: 1em;
 }
 
 .mainTitle {
-  font-size: 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
-  text-shadow: 1px 1px 2px #2081db, 0 0 4px rgb(221, 126, 255);
+  padding: 1em;
+  /* text-shadow: 1px 1px 2px #2081db, 0 0 4px rgb(221, 126, 255); */
 }
 
 .buttonStyle {
@@ -40,6 +44,8 @@
   padding: 1.5em;
   border: none;
   border-radius: 20px;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 .buttonStyle:hover {
