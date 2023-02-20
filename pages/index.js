@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-// import { Inter } from '@next/font/google'
+import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import record from '../data/genshin_characters.json'
 import { useState, useEffect } from 'react'
 import { SplashScreen } from '@/components/SplashScreen'
-// const inter = Inter({ subsets: ['latin'] })
+import { NavBar } from '@/components/NavBar'
 
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -39,6 +39,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <NavBar />
       <main className={styles.main}>
         <div>
           <h1 className={styles.mainTitle}>✨ Wish Impact ✨</h1>
