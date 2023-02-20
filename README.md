@@ -11,8 +11,8 @@
 - Playwright
 
 ## How to Run
-Run
+Install 
 > npm install
 
-Run localhost
-Run npm run dev to start the development server
+Run on localhost:3000
+> npm run dev
