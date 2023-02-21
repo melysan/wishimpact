@@ -53,7 +53,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <button className={styles.buttonStyle} onClick={giveRandomCharacter}>Make a Wish!</button>
+        <button id="gacha" className={styles.buttonStyle} onClick={giveRandomCharacter}>Make a Wish!</button>
 
       </main>
       <Footer />

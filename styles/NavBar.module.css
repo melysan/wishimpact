@@ -8,6 +8,12 @@
     flex-direction: row-reverse;
 }
 
+.navIcon {
+    position: absolute;
+    left: 2%;
+    top: 1%;
+}
+
 .navLink {
     display: block;
     color: white;
