@@ -16,6 +16,7 @@
     font-size: 7em;
 }
 
+
 .splashDescription {
     display: flex;
     justify-content: center;
@@ -40,5 +41,26 @@
 
     100% {
         opacity: 0;
+    }
+}
+
+@media (max-width: 414px) {
+
+    .splashTitle {
+        font-size: 2em;
+    }
+
+    .splashDescription {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+    .splashTitle {
+        font-size: 5em;
+    }
+
+    .splashDescription {
+        font-size: 24px;
     }
 }
