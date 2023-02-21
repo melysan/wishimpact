@@ -4,10 +4,10 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding-left: 10%;
-    padding-right: 10%;
     flex-wrap: wrap;
-    background-color: rgb(208, 229, 255);
+    /* background-color: rgb(208, 229, 255); */
+    background: rgb(134, 172, 255);
+    background: linear-gradient(180deg, rgba(134, 172, 255, 1) 50%, rgba(249, 209, 255, 1) 100%);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -15,7 +15,7 @@
 .charTitle {
     font-size: 2em;
     color: white;
-    text-shadow: 1px 1px 2px #2081db, 0 0 4px rgb(221, 126, 255);
+    text-shadow: 1px 1px 2px rgb(32, 129, 219), 0 0 4px rgb(221, 126, 255);
     margin: 2em 1em 1em 1em;
 }
 
@@ -23,6 +23,8 @@
     font-size: 1.2em;
     font-weight: 600;
     color: black;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
 .charRarity {
@@ -30,6 +32,8 @@
     font-weight: 600;
     color: black;
     padding: .2em;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
 .charElements {
@@ -38,7 +42,7 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    background-color: rgb(208, 229, 255);
+    /* background-color: rgb(208, 229, 255); */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -57,8 +61,9 @@
 .elementTitle {
     font-size: 1.5em;
     color: white;
-    text-shadow: 1px 1px 2px #2081db, 0 0 4px rgb(221, 126, 255);
+    text-shadow: 1px 1px 2px rgb(31, 128, 219), 0 0 4px rgb(221, 126, 255);
     margin-top: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .charPyro {

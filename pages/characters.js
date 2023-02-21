@@ -28,15 +28,15 @@ export default function Characters() {
             </Head>
             <NavBar />
             <div>
-                <div className={styles.charPrimogems}><b>Primogems:</b> {number}</div>
+                <div id="primogemCounter" className={styles.charPrimogems}><b>Primogems:</b> {number}</div>
                 <div className={styles.charMain}>
                     <h1 className={styles.charTitle}>
-                        <Image src={"Wish_Impact_Icon.svg"} width={50} height={50} />
+                        <Image src={"Wish_Impact_Icon.svg"} width={25} height={25} />
                         Wish Impact Characters
-                        <Image src={"Wish_Impact_Icon.svg"} width={50} height={50} />
+                        <Image src={"Wish_Impact_Icon.svg"} width={25} height={25} />
                     </h1>
 
-                    <h2 className={styles.elementTitle}>Pyro</h2>
+                    <h2 id="pyroElement" className={styles.elementTitle}>Pyro</h2>
                     <div className={styles.charElements}>
                         {
                             record.map((rec, index) => {
@@ -52,7 +52,7 @@ export default function Characters() {
                             })
                         }
                     </div>
-                    <h2 className={styles.elementTitle}>Hydro</h2>
+                    <h2 id="hydroElement" className={styles.elementTitle}>Hydro</h2>
                     <div className={styles.charElements}>
                         {
                             record.map((rec, index) => {
@@ -69,7 +69,7 @@ export default function Characters() {
                         }
                     </div>
 
-                    <h2 className={styles.elementTitle}>Anemo</h2>
+                    <h2 id="anemoElement" className={styles.elementTitle}>Anemo</h2>
                     <div className={styles.charElements}>
                         {
                             record.map((rec, index) => {
@@ -86,7 +86,7 @@ export default function Characters() {
                         }
                     </div>
 
-                    <h2 className={styles.elementTitle}>Electro</h2>
+                    <h2 id="electroElement" className={styles.elementTitle}>Electro</h2>
                     <div className={styles.charElements}>
                         {
                             record.map((rec, index) => {
@@ -103,7 +103,7 @@ export default function Characters() {
                         }
                     </div>
 
-                    <h2 className={styles.elementTitle}>Cryo</h2>
+                    <h2 id="cryoElement" className={styles.elementTitle}>Cryo</h2>
                     <div className={styles.charElements}>
                         {
                             record.map((rec, index) => {
@@ -120,7 +120,7 @@ export default function Characters() {
                         }
                     </div>
 
-                    <h2 className={styles.elementTitle}>Geo</h2>
+                    <h2 id="geoElement" className={styles.elementTitle}>Geo</h2>
                     <div className={styles.charElements}>
                         {
                             record.map((rec, index) => {
@@ -137,7 +137,7 @@ export default function Characters() {
                         }
                     </div>
 
-                    <h2 className={styles.elementTitle}>Dendro</h2>
+                    <h2 id="dendroElement" className={styles.elementTitle}>Dendro</h2>
                     <div className={styles.charElements}>
                         {
                             record.map((rec, index) => {

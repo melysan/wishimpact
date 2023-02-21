@@ -44,8 +44,9 @@ export default function Home() {
       <main className={styles.main}>
         <div>
           <h1 className={styles.mainTitle}>
-            <Image id="wishImpactLogo" src={"Wish_Impact_Logo.svg"} width={1000} height={100} ></Image></h1>
-
+            <Image id="wishImpactLogo" src={"Wish_Impact_Logo.svg"}
+              layout='responsive'
+              width={1000} height={100} ></Image></h1>
           <div id="wishContainer" className={styles.wishContainer}>
             <div id="charDiv" style={{ display: "none" }}>
               <div className={styles.wishCharacterName}>You got {record[randomChar].character_name}!</div>

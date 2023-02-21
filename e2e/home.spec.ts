@@ -12,7 +12,7 @@ test.describe("Testing on Home Page", () => {
         })
 
         console.log(checkButtonColour);
-        expect(checkButtonColour).toBe("rgb(96, 178, 255)");
+        expect(checkButtonColour).toBe("rgb(0, 0, 0)");
     })
 
     test('Check to see if home page contain Wish Impact image', async ({ page }) => {

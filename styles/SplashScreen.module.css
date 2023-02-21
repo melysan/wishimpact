@@ -3,23 +3,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 6rem;
     min-height: 100vh;
-    flex-wrap: wrap;
     background-color: rgb(89, 152, 236);
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .splashTitle {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     font-size: 7em;
-    font-style: oblique;
 }
 
 .splashDescription {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     font-size: 2em;
     font-weight: 900;
-
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .splashFade {
