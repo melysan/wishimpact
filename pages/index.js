@@ -44,9 +44,9 @@ export default function Home() {
       <main className={styles.main}>
         <div>
           <h1 className={styles.mainTitle}>
-            <Image src={"Wish_Impact_Logo.svg"} width={1000} height={100} ></Image></h1>
+            <Image id="wishImpactLogo" src={"Wish_Impact_Logo.svg"} width={1000} height={100} ></Image></h1>
 
-          <div className={styles.wishContainer}>
+          <div id="wishContainer" className={styles.wishContainer}>
             <div id="charDiv" style={{ display: "none" }}>
               <div className={styles.wishCharacterName}>You got {record[randomChar].character_name}!</div>
               <Image className={styles.wishCharacterImage} src={record[randomChar].image_url} width={400} height={400}></Image>
@@ -56,7 +56,9 @@ export default function Home() {
         <button id="gacha" className={styles.buttonStyle} onClick={giveRandomCharacter}>Make a Wish!</button>
 
       </main>
-      <Footer />
+      <div id="footer">
+        <Footer />
+      </div>
     </>
   )
 }
